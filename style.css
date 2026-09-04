@@ -1,0 +1,762 @@
+/* =========================
+   ROOT VARIABLE (PINK SOFT)
+========================= */
+
+:root {
+
+    --primary: #ec4899;
+
+    --primary-dark: #db2777;
+
+    --background: #fdf2f8;
+
+    --sidebar: #831843;
+
+    --card: #ffffff;
+
+    --text: #831843;
+
+    --text-light: #9d174d;
+
+    --border: #fbcfe8;
+
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark {
+
+    --primary: #f472b6;
+
+    --primary-dark: #ec4899;
+
+    --background: #180d15;
+
+    --sidebar: #2d0a1e;
+
+    --card: #23121c;
+
+    --text: #fdf2f8;
+
+    --text-light: #fbcfe8;
+
+    --border: #4a1532;
+
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        var(--background);
+
+    color:
+        var(--text);
+
+}
+
+
+/* =========================
+   TOOLBAR
+========================= */
+
+.toolbar {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    padding: 20px;
+
+}
+
+
+.toolbar button {
+
+    border: none;
+
+    padding:
+        10px
+        16px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    background:
+        var(--primary);
+
+    color: white;
+
+    font-size: 14px;
+
+    transition:
+        0.3s;
+
+}
+
+
+.toolbar button:hover {
+
+    background:
+        var(--primary-dark);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* =========================
+   CV CONTAINER
+========================= */
+
+.cv-container {
+
+    max-width: 1100px;
+
+    margin:
+        0 auto 40px;
+
+    display: grid;
+
+    grid-template-columns:
+        330px
+        1fr;
+
+    background:
+        var(--card);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+
+    background:
+        var(--sidebar);
+
+    color: white;
+
+    padding: 40px 30px;
+
+}
+
+
+/* =========================
+   PROFILE PHOTO & FOTO
+========================= */
+
+.profile-photo {
+
+    width: 130px;
+
+    height: 130px;
+
+    border-radius: 50%;
+
+    background:
+        var(--primary);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border:
+        5px solid
+        rgba(255, 255, 255, 0.2);
+
+}
+
+
+.profile-photo span {
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+}
+
+
+.foto {
+
+    width: 130px;
+
+    height: 130px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    border:
+        5px solid
+        rgba(255, 255, 255, 0.2);
+
+}
+
+
+/* =========================
+   NAME
+========================= */
+
+.sidebar h1 {
+
+    margin-bottom: 5px;
+
+    font-size: 32px;
+
+}
+
+
+.profession {
+
+    color: #fce7f3;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================
+   LINE
+========================= */
+
+.line {
+
+    height: 1px;
+
+    background:
+        rgba(255, 255, 255, 0.2);
+
+    margin:
+        25px 0;
+
+}
+
+
+/* =========================
+   SIDEBAR SECTION
+========================= */
+
+.sidebar-section {
+
+    margin-bottom: 35px;
+
+}
+
+
+.sidebar-section h3 {
+
+    margin-bottom: 18px;
+
+    color: #ffffff;
+
+}
+
+
+.sidebar-section p {
+
+    color: #fce7f3;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================
+   SKILL
+========================= */
+
+.skill {
+
+    margin-bottom: 18px;
+
+}
+
+
+.skill-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 14px;
+
+}
+
+
+.progress {
+
+    width: 100%;
+
+    height: 8px;
+
+    margin-top: 7px;
+
+    background:
+        rgba(255, 255, 255, 0.2);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+}
+
+
+.progress-value {
+
+    height: 100%;
+
+    background:
+        var(--primary);
+
+    border-radius: 10px;
+
+}
+
+
+/* PERSENTASE SKILL (Disesuaikan Nama Skill CV Syifa) */
+
+.skill-ms\.word {
+
+    width: 70%;
+
+}
+
+.skill-ms\.excel {
+
+    width: 55%;
+
+}
+
+.skill-ms\.aces {
+
+    width: 35%;
+
+}
+
+.skill-ms\.ppt {
+
+    width: 40%;
+
+}
+
+.skill-data\.entry {
+
+    width: 85%;
+
+}
+
+
+/* =========================
+   TAG
+========================= */
+
+.tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+}
+
+
+.tags span {
+
+    background:
+        rgba(255, 255, 255, 0.15);
+
+    padding:
+        7px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.content {
+
+    padding: 45px;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.content-header {
+
+    margin-bottom: 40px;
+
+}
+
+
+.welcome {
+
+    color:
+        var(--primary);
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    font-size: 13px;
+
+}
+
+
+.content-header h2 {
+
+    font-size: 32px;
+
+    margin-top: 8px;
+
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom:
+        2px solid
+        var(--border);
+
+    padding-bottom: 12px;
+
+    cursor: pointer;
+
+}
+
+
+.section-title:hover {
+
+    color:
+        var(--primary);
+
+}
+
+
+.static-title {
+
+    cursor: default;
+
+}
+
+
+/* =========================
+   SECTION CONTENT
+========================= */
+
+.section-content {
+
+    line-height: 1.8;
+
+    color:
+        var(--text-light);
+
+    padding-top: 10px;
+
+}
+
+
+/* =========================
+   LIST
+========================= */
+
+.list {
+
+    padding-left: 20px;
+
+}
+
+
+.list li {
+
+    margin-bottom: 8px;
+
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience {
+
+    border-left:
+        4px solid
+        var(--primary);
+
+    padding-left: 18px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.experience h3 {
+
+    margin-bottom: 8px;
+
+}
+
+
+.experience-description {
+
+    color:
+        var(--text-light);
+
+}
+
+
+/* =========================
+   PROJECT LIST
+========================= */
+
+.project-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+
+}
+
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project {
+
+    background:
+        var(--background);
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    border:
+        1px solid
+        var(--border);
+
+    transition:
+        0.3s;
+
+}
+
+
+.project:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(236, 72, 153, 0.15);
+
+}
+
+
+.project h3 {
+
+    margin-top: 0;
+
+    color:
+        var(--primary);
+
+}
+
+
+.project p {
+
+    color:
+        var(--text-light);
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================
+   TECHNOLOGY
+========================= */
+
+.technology-grid {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+}
+
+
+.technology {
+
+    padding:
+        10px 16px;
+
+    background:
+        var(--background);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 8px;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .cv-container {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .project-list {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .content {
+
+        padding: 25px;
+
+    }
+
+
+    .sidebar {
+
+        padding: 30px 25px;
+
+    }
+
+
+    .content-header h2 {
+
+        font-size: 25px;
+
+    }
+
+}
+
+
+/* =========================
+   PRINT
+========================= */
+
+@media print {
+
+    body {
+
+        background: white;
+
+    }
+
+
+    .toolbar {
+
+        display: none;
+
+    }
+
+
+    .cv-container {
+
+        box-shadow: none;
+
+        margin: 0;
+
+        max-width: 100%;
+
+    }
+
+}
